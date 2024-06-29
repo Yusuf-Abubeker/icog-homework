@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  backend:
+    image: python:3.9-slim
+    working_dir: /app
+    volumes:
+      - ./backend:/app
+    command: sh -c "pip install -r requirements.txt && python app.py"
+    ports:
+      - "5000:5000"
+  frontend:
+    image: nginx:alpine
+    volumes:
+      - ./frontend:/usr/share/nginx/html
+    ports:
+      - "80:80"
+    depends_on:
+      - backend

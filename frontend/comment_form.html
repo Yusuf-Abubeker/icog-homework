@@ -1,0 +1,15 @@
+<form id="commentForm">
+    <input type="hidden" id="commentId" name="comment_id" value="">
+    <label for="comment">Comment:</label><br>
+    <textarea id="comment" name="comment" required></textarea><br>
+    <label for="category">Category:</label>
+    <select id="category" name="primary_category" required>
+        <option value="Good">Good</option>
+        <option value="Bad">Bad</option>
+    </select><br>
+    <label for="secondary_category">Secondary Category:</label>
+    <input type="text" id="secondary_category" name="secondary_category" required><br>
+    <label for="tertiary_category">Tertiary Category:</label>
+    <input type="text" id="tertiary_category" name="tertiary_category" required><br>
+    <button type="submit">Save</button>
+</form>
