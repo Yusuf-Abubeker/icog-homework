@@ -1,17 +1,12 @@
-# Comment Management System
+# Dockerized Flask and HTML Frontend Project
 
-This project was developed as a part of an assignment for Docker training. The task was to build a frontend using HTML and a backend using Python, containerized using Docker.
+This project is a homework assignment from my trainer, aimed at building a web application using Docker. The task involves creating a backend using Python (Flask) and a frontend using HTML, both containerized using Docker.
 
 ## Project Structure
 
-- `backend/`: Contains the Flask API implementation.
-- `frontend/`: Contains the HTML, CSS, and JavaScript files for the frontend.
-
-## Technologies Used
-
-- Backend: Python with Flask
-- Frontend: HTML, CSS, JavaScript
-- Containerization: Docker
+- **Backend**: A Flask API that handles comments.
+- **Frontend**: A static HTML/CSS/JavaScript application served by Nginx.
+- **Docker**: Docker and Docker Compose to containerize both the frontend and backend.
 
 ## Flask API
 
